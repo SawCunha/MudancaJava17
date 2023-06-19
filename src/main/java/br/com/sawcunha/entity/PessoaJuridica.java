@@ -10,7 +10,7 @@ import java.time.LocalDate;
 @EqualsAndHashCode(callSuper = true)
 @Data
 @SuperBuilder
-public class PessoaJuridica extends Pessoa {
+public final class PessoaJuridica extends Pessoa {
 
     private String cnpj;
     private String nomeFantasia;

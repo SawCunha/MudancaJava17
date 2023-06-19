@@ -6,7 +6,7 @@ import lombok.experimental.SuperBuilder;
 
 @Data
 @SuperBuilder
-public class Pessoa {
+public sealed class Pessoa permits PessoaFisica, PessoaJuridica {
 
     private String nome;
 
